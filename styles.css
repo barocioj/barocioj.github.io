@@ -3,7 +3,7 @@ p {
 	color: white; 
 }
    
-.invert, #both { 
+#both { 
 	background: white; 
 	color: blue; 
 }
