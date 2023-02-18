@@ -1,3 +1,13 @@
-   p { background: blue; color: white; }
-   .invert, #both { background: white; color: blue; }
-   #fancy, #both { font-style: italics; }
+p { 
+	background: blue; 
+	color: white; 
+}
+   
+.invert, #both { 
+	background: white; 
+	color: blue; 
+}
+
+#fancy, #both { 
+	font-style: italics; 
+}
