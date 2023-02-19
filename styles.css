@@ -1,11 +1,7 @@
-p { 
-	background: blue; 
-	color: white; 
-}
-   
-#both { 
-	background: white; 
-	color: blue; 
+
+#workexp { 
+	background: grey; 
+	color: black; 
 }
 
 #fancy, #both { 
