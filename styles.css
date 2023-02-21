@@ -1,9 +1,9 @@
 .invert, #contactinfo {
 	text-align: center;
   	border: 3px solid black;
-	font-weight: bold;
-	
-}
+	background: grey; 
+	color: black;
+	font-size: 20px;
 
 
 #workexp, #education, #personalstatement { 
@@ -17,5 +17,11 @@
 #statment, #details {
 	  text-indent: 20%;
 	  background: lightgrey;
+}
+	
+#experience {
+	font-weight: bold;
+	background: lightgrey;
+	
 }
 
