@@ -14,7 +14,7 @@
 	font-weight: bold;
 }
 
-#statement {
+#statement, #details {
 	  text-indent: 20%;
 }
 
