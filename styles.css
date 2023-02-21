@@ -1,20 +1,15 @@
 #contactinfo {
 	text-align: center;
   	border: 3px solid black;
+	font-weight: bold;
 	
 }
 
 
-#education {
-	text-align: center;
-  	border: 3px solid green;
-	
-}
-
-
-#workexp { 
+#workexp, #education, #personalstament { 
 	background: grey; 
 	color: black;
 	font-size: 20px;
 	border: 2px solid black;
+	font-weight: bold;
 }
