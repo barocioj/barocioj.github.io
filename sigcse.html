@@ -3,13 +3,24 @@
  <head>
   <link rel="stylesheet" href="./styles.css">
  </head>
- <body>
-  
+ <img id="Jesus" width="400" height="400" src="./Jesus.webp" hidden>
+ <body onload="draw();">
+    <canvas id="canvas" width="400" height="400" style="border:5px solid #ffffff;"></canvas>
+    <p><button onclick="doodle()">Draw Jesus</button></p>
+       <script>
+        function doodle() {
+          var c = document.getElementById("canvas");
+          var ctx = c.getContext("2d");
+          var img = document.getElementById("Jesus");
+          ctx.drawImage(img, 10, 10, 400, 400);
+        }
+        </script>        
+
 <p> Do you think that the criticism Nicki Washington got is valid, or do they clearly demonstrate the problem at SIGCSE?</p>
 
 <p>Are the problems that are present at SIGCSE applicable to the CS world in general, as in do these behaviors and patterns exist elsewhere?</p>
 
-<p>While SIGCSE has made efforts to combat the problems outlined by Dr. Nicki Washington, there is still blatant elitistm and biases to work,  especially to  the work that are written by BIPOC.</p>
+<p><strong>While SIGCSE has made efforts to combat the problems outlined by Dr. Nicki Washington, there is still blatant elitistm and biases to work,  especially to  the work that are written by BIPOC.</strong></p>
 
 <p>What actions can be taken by the SIGCSE to decrease the prevalence of the issues that Nicki Washington stated, will these be effective?</p>
 
