@@ -43,3 +43,6 @@ body {
 	background-color: black;
 	color: #00ffff;
 }
+.flip {
+	transform: rotate(180deg);
+  }
