@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>STOP HW</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="./styles.css">
+
+</head>
+<body>
+    <canvas id="chart"></canvas>
+    <script>
+        // Data from provided percentages
+        const data = {
+            labels: [
+                "Astoria PD", "Brookings PD", "Cannon Beach PD", "Clackamas CO SO", "Coburg PD", "Cottage Grove PD",
+                "Eugene PD", "Forest Grove PD", "Gervais PD", "Gilliam CO SO", "Hermiston PD", "Hillsboro PD",
+                "Hubbard PD", "Independence PD", "Lake Oswego PD", "Madras PD", "McMinnville PD", "Morrow CO",
+                "Newport PD", "Oregon City PD", "Polk CO", "Sherwood PD", "Stanfield PD", "Tigard PD", "Tillamook CO",
+                "Tualatin PD", "Umatilla PD", "Woodburn PD", "Yamhill CO"
+            ],
+            datasets: [
+                {
+                    label: "Actual",
+                    backgroundColor: "rgba(75, 192, 192, 0.5)", // Color for actual bars
+                    data: [
+                        27.4, 18.3, 27.7, 35.4, 57.8, 60.7, 36.5, 37.4, 78.2, 70.4, 29.5, 32.1, 25.2, 28.8, 49.7, 48.8,
+                        37.8, 33.3, 32.6, 37.8, 26.9, 25.7, 29.2, 44.9, 46.4, 49.5, 26.1, 45.7, 24.4
+                    ]
+                },
+                {
+                    label: "Predicted",
+                    backgroundColor: "rgba(255, 99, 132, 0.5)", // Color for predicted bars
+                    data: [
+                        16.4, 11.6, 17.5, 31.6, 46.8, 26.2, 32.6, 30.1, 67.8, 61.4, 22.3, 27.1, 18.4, 20.8, 42.7, 29.0,
+                        30.0, 26.5, 20.4, 27.7, 21.2, 19.7, 23.6, 32.1, 38.0, 44.0, 21.0, 39.1, 20.9
+                    ]
+                }
+            ]
+        };
+
+        // Create bar chart
+        new Chart(document.getElementById('chart'), {
+            type: 'bar',
+            data: data,
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 100, // Set maximum value for y-axis to 100%
+                        callback: function(value) {
+                            return value + '%'; // Add percentage symbol to y-axis labels
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+    <p><strong>For me, the STOP bill has been a very important piece of legislation passed by the Oregon Justice Criminal Commission. These reports aim to promote transparency and accountability in law enforcement practices by providing data on various aspects of policing. This includes stop searches, arrests, and use of force incidents. They also kindly separate it by different demographics including gender and race. My main argument is that even though they are transparent with these stats it still shows that there are very many discernible patterns and relations between race and how often you are involved in any of these aspects of policing. Specifically, the statistic that jarred me the most is that from my understanding all the predicted policing stops when it pertains to people of color were higher than their predicted value. Below you will see that almost every single race that is listed in the table that I have visualized is higher than the predicted count that comes from the proportion of the state population. Additionally, but not surprisingly the only one that is lower than predicted is when it comes from white people. This directly shows that there are implicit biases in Oregon like much of the United States when it comes to policing. In fact, as a person of color, I have witnessed this myself. I can recount many stories that when a POC gets pulled over in Oregon, they are more likely to be hit with larger fines and less sympathy from the officer. In fact that gives me an idea, I wonder what is the average ticket price or citation price to each demographic. I think it would also really correlate with ethnicity and age. Teenagers do dumb things but I feel like if you are a POC teenager you are even more likely to get hit with bigger fines than your non-POC counterpart at the same age. Living in Oregon, I also know which counties are the more rural ones, and even then the statistics line up with a lot of beliefs about those places. Specifically for Latinx people, there were disparities from all police departments in Oregon. Meaning the actual rate that they were pulled over at was higher than the predicted rate, In some counties the increase was almost as much as 10 percent. It would be one thing if it was just a 10% disparity in one or two counties but this happens in multiple counties and honestly, it is weird that Latinx communities seem to be hurt and stopped the most by Oregon PD all across the state and between all the different counties.</strong> </p>
+</body>
+</

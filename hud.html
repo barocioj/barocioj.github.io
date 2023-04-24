@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <link rel="stylesheet" href="./styles.css">
+ </head>
+ <body>
+  
+<h1>Upside Down Text</h1>
+  <p>Click my main thesis(coded element)</p>
+  <p id="upsideDownText"><strong>Meta ultimately was in violation of the fair housing act by using discriminatory ad practice that dictates which person is shown ads for houses. This behavior and use of the algorithm were encouraged by Meta to its advertisers for inevitable profit gain.</strong></p>
+
+  <script>
+    document.getElementById("upsideDownText").addEventListener("click", function() {
+      var text = this.innerHTML;
+      this.innerHTML = flipText(text);
+    });
+
+    function flipText(text) {
+      var upsideDownText = "";
+      for (var i = text.length - 1; i >= 0; i--) {
+        upsideDownText += text.charAt(i);
+      }
+      return '<span class="upside-down">' + upsideDownText + '</span>';
+    }
+  </script>
+  <p> Jesus Barocio Discussion </p>
+  
+  <p> Facebook, now known as Meta has been found by the Department of Justice to engage in discriminatory advertising which directly or indirectly is in violation of the fair housing act </p>
+
+  <p> What do you think are the motivations behind not advertising housing to some meta users, do you believe it is tied to any societal issues? </p>
+  
+  <p> Do you believe that this exploit of advertising algorithms can be tied to a lack of diversity in the software industry? </p>
+  
+  <p> Do you believe that when testing social media algorithms, especially dealing with one filtering information, there should be a development team focused on that the algorithm is not discriminatory </p>
+  
+  <p> Do you think that the creators of this algorithm should be held accountable more than the company, or what internal review was done at Meta, if any ? </p>
+  
+  <p>Where do you believe the line between advantageous marketing and being discriminatory lies? In other words, when do profits motives become too much?</p>
+  
+  <p>Do you believe that the real estate companies that took advantage of this algorithm are also at fault, should they be held accountable?</p>
+  
+  <p>How come none of this was stopped by any group at Meta, do you believe this says something about the company as a whole?</p>
+  
+  <p>Do you think Meta will adapt and reorder their algorithms more effectively in the future, or do you believe that there are other shady things that they are doing?</p>
+    
+
+ </body>
+</html>
