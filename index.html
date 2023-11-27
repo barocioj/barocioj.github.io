@@ -29,7 +29,7 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        h1, h2, h3 {
+        h1, h2 {
             color: #fff;
         }
 
@@ -72,6 +72,7 @@
 
         .resume {
             margin-top: 2em;
+            text-align: center;
         }
 
         .resume a {
@@ -105,17 +106,16 @@
             with a keen interest in exploring and solving real-world problems through technology.
         </p>
         
-        <section class="resume">
-            <h3>Resume</h3>
+        <div class="resume">
+            
             <a href="https://docs.google.com/document/d/e/2PACX-1vTjOV8CVAhGPR7rOi7wabYqA4IPdjDJ1-CqjWymuyML5Q9wBtt4Cm4cx3Am_ad5_w/pub" target="_blank">Resume</a>
             <!-- Provide a link to your resume file -->
-        </section>
+        </div>
 
-        <section class="picture">
-            <h3>Picture</h3>
-            <img src="https://cdn.prestosports.com/action/cdn/img/mw=320/cr=n/d=gb1ho/98c80aeg1bug39r3.jpg" alt="Jesus Barocio">
+        <div class="picture">
+            <img src="https://www.wubearcats.com/sports/mten/2020-21/photos/0001/Jesus_Barocio_Garibay.jpg?max_width=320" alt="Jesus Barocio">
             <!-- Provide a link to your picture file -->
-        </section>
+        </div>
     </section>
 
     <section>
@@ -151,9 +151,35 @@
             </div>
 
             <div class="project">
-                <h3>Project 2</h3>
-                <p>Description of Project 2 goes here. You can provide additional details and information about the project.</p>
+                <h3>Epidemic Spread Simulation</h3>
+                <p>
+                    This Python program uses the NetworkX and Matplotlib libraries to simulate the spread of an epidemic within a randomly generated network. The simulation considers various parameters, including infection rate, recovery rate, incubation rate, and vaccination probability. The interactive sliders allow users to control the simulation parameters and observe the progression of the epidemic over a specified number of days.
+                </p>
+            
+                <h4>Simulation Parameters:</h4>
+                <ul>
+                    <li><strong>Nodes:</strong> Number of nodes in the network.</li>
+                    <li><strong>Edges:</strong> Number of edges in the network.</li>
+                    <li><strong>Infection Rate:</strong> Probability of infection when a susceptible node interacts with an infected node.</li>
+                    <li><strong>Recovery Rate:</strong> Probability of recovery for an infected node.</li>
+                    <li><strong>Incubation Rate:</strong> Probability of transitioning from exposed to infected.</li>
+                    <li><strong>Vaccination Probability:</strong> Probability of vaccination for susceptible nodes.</li>
+                    <li><strong>Days:</strong> Number of days for the simulation.</li>
+                </ul>
+            
+                <p>
+                    The program visualizes the epidemic spread, highlighting susceptible (blue), infected (red), recovered (green), exposed (purple), and vaccinated (yellow) nodes. Each day, the simulation updates the network state based on the specified parameters.
+                </p>
+            
+                <h4>How to Use:</h4>
+                <ol>
+                    <li>Adjust the sliders to set the initial parameters.</li>
+                    <li>Click the "Run Simulation" button to start the interactive epidemic spread simulation.</li>
+                </ol>
+            
+                <p>GitHub Repository: <a href="https://github.com/barocioj/Epidemic-Spread-Simulator" target="_blank">Epidemic Spread Simulation</a></p>
             </div>
+            
 
             <!-- Add more projects as needed -->
 
@@ -168,4 +194,3 @@
 
 </body>
 </html>
-
