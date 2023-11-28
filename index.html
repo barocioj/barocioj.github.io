@@ -5,8 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jesus Barocio Garibay - Portfolio</title>
     <link rel="icon" href="https://storage.googleapis.com/ribblr-disk/pics/48464/cover-1cysdyslv.png" type="image/x-icon">
-    <!-- Replace "link-to-your-favicon.ico" with the actual link to your favicon file -->
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
     <style>
+        /* Add your custom styles here */
+
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
@@ -19,6 +24,24 @@
             color: #fff;
             padding: 1em;
             text-align: center;
+            position: relative;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        header .icons {
+            position: absolute;
+            top: 50%;
+            left: 1em;
+            transform: translateY(-50%);
+        }
+
+        .fa-envelope {
+            color: #f7f3f3;
+            font-size: 1.75em;
+            margin-right: 10em; /* Adjusted padding to move it further to the right */
         }
 
         section {
@@ -29,60 +52,7 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        h1, h2 {
-            color: #fff;
-        }
-
-        p {
-            color: #555;
-        }
-
-        a {
-            color: #007BFF;
-            text-decoration: none;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        li {
-            margin-bottom: 0.5em;
-        }
-
-        ol {
-            margin-top: 0;
-        }
-
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-
-        .project {
-            width: 48%;
-            box-sizing: border-box;
-            margin-bottom: 2em;
-            padding: 1em;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .resume {
-            margin-top: 2em;
-            text-align: center;
-        }
-
-        .resume a {
-            display: block;
-            margin-bottom: 1em;
-            font-weight: bold;
-        }
-
         .picture {
-            margin-top: 2em;
             text-align: center;
         }
 
@@ -90,49 +60,67 @@
             max-width: 100%;
             border-radius: 50%;
         }
+
+        .resume a, .email a {
+            display: inline-block;
+            margin-top: 1em;
+            padding: 0.5em 1em;
+            background-color: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        /* Add your existing styles here */
+
     </style>
 </head>
 <body>
 
     <header>
+        <div class="icons">
+            <a href="https://www.linkedin.com/in/jesus-barocio-garibay-927641210/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin fa-2x"></i></a>
+            <a href="https://github.com/barocioj" target="_blank" title="GitHub"><i class="fab fa-github fa-2x" style="margin-left: 1em;"></i></a>
+            <a href="mailto:jesusbarociogaribay@gmail.com" title="Email" style="color: #e7dbdb;"><i class="far fa-envelope fa-2x"></i></a>
+            <!-- Add your email link here -->
+        </div>
         <h1> Jesus Barocio Garibay </h1>
         <h2>Computer Science and Data Science Student</h2>
     </header>
 
     <section>
         <h2>About Me</h2>
-        <section>
-            <h2>About Me</h2>
-            <p>
-                Hello! My name is Jesus and I'm a senior at Willamette University majoring in Computer and Data Science, where I've not only gained technical expertise through my involvement with Willamettes IT but also cultivated a passion for collaborative problem-solving. I am dedicated to effective communication, innovative thinking, and a strong spirit of teamwork.
-            </p>
-        
-            <p>
-                As a former member of the Willamette tennis team, I learned the importance of set others up to succeed. On and off the court, I've embraced effective communication, partnering collaboratively with teammates to achieve shared goals, and providing and receiving supportive feedback. These experiences have honed my ability to work  within a team, a skill I bring to every collaborative project.
-            </p>
-        
-            <p>
-                My academic pursuits in Computer and Data Science have exposed me to diverse challenges, each an opportunity to ask, listen, and learn. Whether delving into complex algorithms or exploring emerging technologies, I've actively sought out new information, asked thoughtful questions, and listened intently to diverse perspectives. This commitment to continuous learning has enriched my understanding.
-            </p>
-        
-            <p>
-                My professional experience in IT has equipped me with a solid foundation in IT concepts. I've demonstrated flexibility and adaptability by navigating dynamic environments. Through collaborative problem-solving, I've consistently implemented innovative solutions, showcasing a solutions-oriented approach to challenges.
-            </p>
-        
-            <p>
-                I aim to thoughtfully Deliver, taking ownership of my work with  care. Whether it's a collaborative coding project or contributing to the success of the tennis team, I always strive to understand the broader impact of my efforts. This approach is underscored by a deep understanding of the  aspects that are relevant to my field and a  focus on both internal and external customers.
-            </p>
-        
-        <div class="resume">
-            
-            <a href="https://docs.google.com/document/d/e/2PACX-1vTjOV8CVAhGPR7rOi7wabYqA4IPdjDJ1-CqjWymuyML5Q9wBtt4Cm4cx3Am_ad5_w/pub" target="_blank">Resume</a>
-            <!-- Provide a link to your resume file -->
-        </div>
-
         <div class="picture">
             <img src="https://www.wubearcats.com/sports/mten/2020-21/photos/0001/Jesus_Barocio_Garibay.jpg?max_width=320" alt="Jesus Barocio">
             <!-- Provide a link to your picture file -->
         </div>
+        <p>
+            Hello! My name is Jesus and I'm a senior at Willamette University majoring in Computer and Data Science, where I've not only gained technical expertise through my involvement with Willamettes IT but also cultivated a passion for collaborative problem-solving. I am dedicated to effective communication, innovative thinking, and a strong spirit of teamwork.
+        </p>
+    
+        <p>
+            As a former member of the Willamette tennis team, I learned the importance of set others up to succeed. On and off the court, I've embraced effective communication, partnering collaboratively with teammates to achieve shared goals, and providing and receiving supportive feedback. These experiences have honed my ability to work within a team, a skill I bring to every collaborative project.
+        </p>
+    
+        <p>
+            My academic pursuits in Computer and Data Science have exposed me to diverse challenges, each an opportunity to ask, listen, and learn. Whether delving into complex algorithms or exploring emerging technologies, I've actively sought out new information, asked thoughtful questions, and listened intently to diverse perspectives. This commitment to continuous learning has enriched my understanding.
+        </p>
+    
+        <p>
+            My  experience in IT has given me a solid foundation in IT concepts. I've demonstrated flexibility and adaptability by navigating dynamic environments. Through collaborative problem-solving, I've consistently implemented innovative solutions, showcasing a solutions-oriented approach to challenges.
+        </p>
+    
+        <p>
+            I aim to thoughtfully deliver, by taking ownership of my work with care. Whether it's a collaborative coding project or contributing to the success of the tennis team. 
+        </p>
+    
+        <div class="resume">
+            <a href="https://docs.google.com/document/d/e/2PACX-1vTjOV8CVAhGPR7rOi7wabYqA4IPdjDJ1-CqjWymuyML5Q9wBtt4Cm4cx3Am_ad5_w/pub" target="_blank"><i class="far fa-file-alt"></i> Resume</a>
+            <!-- Provide a link to your resume file -->
+        </div>
+    </section>
+
+        
     </section>
 
     <section>
@@ -203,11 +191,7 @@
         </div>
     </section>
 
-    <section>
-        <h2>Contact</h2>
-        <p>Email: jesusbarociogaribay@gmail.com</p>
-        <p>GitHub: <a href="https://github.com/barocioj.io" target="_blank">github.com/barocioj</a></p>
-    </section>
+    
 
 </body>
 </html>
